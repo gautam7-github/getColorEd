@@ -59,6 +59,21 @@ class _HomePageState extends State<HomePage> {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               buildImage()!,
+              Visibility(
+                visible: imageDone!,
+                child: MaterialButton(
+                  onPressed: () {},
+                  color: Colors.purple,
+                  padding: const EdgeInsets.all(12),
+                  child: const Text(
+                    "Get Pallete",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 48,
+                    ),
+                  ),
+                ),
+              ),
               MaterialButton(
                 onPressed: pickOneImage,
                 color: Colors.purple,
