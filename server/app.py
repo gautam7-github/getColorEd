@@ -9,7 +9,7 @@ from PIL import Image
 from webcolors import rgb_to_hex
 
 app = Flask(__name__)
-app.config['UPLOAD_FOLDER'] = 'upload'
+app.config['UPLOAD_FOLDER'] = "./upload/"
 
 
 @app.route("/")
